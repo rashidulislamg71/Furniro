@@ -12,6 +12,7 @@
   --text-color: gray;
   --heading-color: rgba(0, 0, 0, 0.753);
   --btn-bg-color: rgb(184, 142, 47);
+  --bg-color: rgb(252, 248, 243);
 }
 
 body {
@@ -202,5 +203,152 @@ small {
 @media screen and (min-width: 1200px) {
   .single_product_card {
     width: 285px;
+  }
+}
+
+/* beautiful rooms section styles  */
+.beauty_rooms_container {
+  background: var(--bg-color);
+  padding: 50px 0px 50px 0px;
+}
+.beauty_rooms_inner_content {
+  gap: 40px;
+}
+.beauty_room_left_side_text {
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  max-width: 314px;
+  height: auto;
+}
+.beauty_room_left_side_text h1 {
+  font-size: 35px;
+  color: var(--heading-color);
+}
+.beauty_room_left_side_text small {
+  display: inline-block;
+  margin: 15px 0px;
+}
+.beauty_room_left_side_text button {
+  padding: 10px 20px;
+}
+
+.beauty_right_side_content {
+  gap: 20px;
+  align-items: start;
+}
+
+.beauty_room_mid_img {
+  position: relative;
+  /* width: 350px; */
+}
+.beauty_room_mid_img img {
+  max-width: 100%;
+}
+
+.about_room {
+  align-items: end;
+  gap: 0;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+.about_room .about_room_text {
+  width: 217px;
+  background: #ffffff94;
+  border-radius: 2px;
+  padding: 35px;
+}
+.about_room .about_room_text p {
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+.about_room .about_room_text p span {
+  height: 1px;
+  width: 20px;
+  background: var(--text-color);
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.about_room .about_room_text h2 {
+  color: var(--heading-color);
+}
+.about_room > div button {
+  padding: 10px 15px;
+  font-size: 17px;
+}
+
+.slider {
+  width: 300px;
+}
+.slider img {
+  height: 400px;
+  max-width: 100%;
+}
+.slick-dots {
+  left: 0px;
+  bottom: -40px;
+}
+.slick-dots li.slick-active button:before {
+  border: 1px solid var(--btn-bg-color);
+  border-radius: 50%;
+  color: var(--btn-bg-color);
+}
+.slick-dots li button:before {
+  font-size: 8px;
+  line-height: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .beauty_rooms_container {
+    padding: 50px 0px 50px 0px;
+  }
+  .beauty_rooms_inner_content {
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 50px;
+  }
+  .beauty_room_left_side_text {
+    height: 300px;
+  }
+  .beauty_room_mid_img {
+    position: relative;
+    width: 350px;
+  }
+  .beauty_room_mid_img img {
+    max-width: 100%;
+  }
+
+  .slick-dots {
+    left: -83px;
+    bottom: -50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .beauty_rooms_container {
+    padding: 50px 0px 50px 30px;
+  }
+  .beauty_rooms_inner_content {
+    gap: 80px;
+  }
+  .beauty_room_left_side_text {
+    height: 400px;
+  }
+
+  .slick-dots {
+    left: -83px;
+    bottom: -50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .beauty_rooms_container {
+    padding: 50px 0px 50px 50px;
+  }
+  .beauty_rooms_inner_content {
+    gap: 100px;
+  }
+  .beauty_room_left_side_text {
+    height: 500px;
   }
 }
