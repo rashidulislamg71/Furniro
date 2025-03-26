@@ -93,6 +93,10 @@ small {
 }
 
 @media screen and (min-width: 1200px) {
+  body{
+    max-width: 1500px;
+    margin: 0 auto;
+  }
   .range_img img {
     width: 340px;
   }
@@ -201,6 +205,10 @@ small {
   }
 }
 @media screen and (min-width: 1200px) {
+  body{
+    max-width: 1500px;
+    margin: 0 auto;
+  }
   .single_product_card {
     width: 285px;
   }
@@ -342,6 +350,10 @@ small {
   }
 }
 @media screen and (min-width: 1200px) {
+  body{
+    max-width: 1500px;
+    margin: 0 auto;
+  }
   .beauty_rooms_container {
     padding: 50px 0px 50px 50px;
   }
@@ -351,4 +363,129 @@ small {
   .beauty_room_left_side_text {
     height: 500px;
   }
+}
+
+
+/* funiro image gallery styles  */
+.img_gallery_container{}
+.img_gallery_inner_content{
+  /* padding: 50px ; */
+}
+.title {
+text-align: center;
+}
+.title h1{
+  color: var(--heading-color);
+}
+.gallery_box{
+  gap: 5px;
+}
+
+.gallery_colum_1, .gallery_colum_3{
+  flex: 2;
+}
+.colum{
+  width: 300px;
+  gap: 5px;
+}
+.colum img{
+  max-width: 100%;
+}
+
+
+/* footer section styles  */
+
+.footer_container{
+  border-top: 1px solid var(--text-color);
+}
+
+.footer_inner_content{
+  padding: 40px 10px 0 10px;
+}
+.footer_box{
+  align-items: start;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.colum{
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+}
+.footer_links{
+  justify-content: space-between;
+}
+.footer_link, .footer_help_links{
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+}
+.footer_link li a, .footer_help_links li a{
+  color: rgba(0, 0, 0, 0.747);
+  transition: all .2s;
+  text-decoration: none;
+}
+.footer_link li a:hover, .footer_help_links li a:hover{
+  color: var(--btn-bg-color);
+}
+
+.footer_title{
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+input[type="email"]{
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid var(--text-color);
+  outline: none;
+  font-size: 16px;
+  color: var(--heading-color);
+}
+.subscribe_btn{
+  border: none;
+  outline: nonen;
+  background: transparent;
+  border-bottom: 1px solid black;
+  transition: all .2s;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.subscribe_btn:hover{
+  color: tomato;
+}
+
+.footer_bottom{
+  padding: 30px 0;
+  text-align: center;
+}
+
+@media screen and (min-width:768px) {
+  .footer_inner_content{
+    padding: 50px 50px 0 50px;
+  }
+  .footer_box{
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+}
+@media screen and (min-width:1024px) {
+  .footer_inner_content{
+    padding: 50px 70px 0 70px;
+  }
+
+  .footer_title{
+    margin-bottom: 20px;
+  }
+  .footer_bottom{
+    padding: 30px 0;
+    text-align: left;
+  }
+
+
 }
