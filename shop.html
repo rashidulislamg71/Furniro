@@ -1,11 +1,109 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop Page</title>
+
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Shop Page -->
+    <section id="shop">
+        <div class="shop_container">
+            <div class="shop_inner_content">
+                <div class="shop_hero">
+                    <p>Home > <span>Shop</span></p>
+                </div>
+
+                <!-- Filter Section -->
+                <div class="flex shop_filter_section">
+                    <div class="flex filter_left_side">
+                        <div class="flex left">
+                            <img src="./Images/shop_page_img/filter.png" alt="Filter">
+                            <p>Filter</p>
+                            <img src="./Images/shop_page_img/round.png" alt="Round">
+                            <img src="./Images/shop_page_img/view-list.png" alt="View List">
+                        </div>
+                        <p>|</p>
+                        <div class="right">
+                            <p>Showing 1-16 of 32 Results</p>
+                        </div>
+                    </div>
+                    <div class="flex filter_right_side">
+                        <p>Show</p>
+                        <span>16</span>
+                        <p>Sort by</p>
+                        <span>Default</span>
+                    </div>
+                </div>
+
+                <!-- Product Section -->
+                <div id="products" class="flex product_container"></div>
+
+                <!-- prducts navigation  -->
+                <div id="products_navigation" class="flex products_navigation">
+                    <button class="active btn product_navigation_btn">1</button>
+                    <button class="btn product_navigation_btn">2</button>
+                    <button class="btn product_navigation_btn">3</button>
+                    <button class="btn product_navigation_btn">Next</button>
+                </div>
+
+                <!-- delevery features  -->
+
+                <div class="delevery_features">
+                    <div class="flex features_content">
+                        <div class="flex single_feature">
+                            <img src="./Images/shop_page_img/high_quality.png" alt="Quality">
+                            <div>
+                                <h3>High Quality</h3>
+                            <small>Crofted from to meterial</small>
+                            </div>
+                        </div>
+                        <div class="flex single_feture">
+                            <img src="./Images/shop_page_img/guarantee.png" alt="Guarantee">
+                            <div>
+                                <h3>Warranty Protection</h3>
+                            <small>Over 2 yers</small>
+                            </div>
+                        </div>
+                        <div class="flex single_feture">
+                            <img src="./Images/shop_page_img/shipping.png" alt="Shipping">
+                            <div>
+                                <h3>Free Shipping</h3>
+                            <small>Orer over 150 $</small>
+                            </div>
+                        </div>
+                        <div class="flex single_feture">
+                            <img src="./Images/shop_page_img/customer-support.png" alt="support">
+                           <div>
+                            <h3>7 Support</h3>
+                            <small>Dedicated support</small>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

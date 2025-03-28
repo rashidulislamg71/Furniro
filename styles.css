@@ -37,11 +37,76 @@ body {
   transition: all 0.3s;
 }
 
+.btn.active{
+  background: rgba(146, 105, 9, 0.932);
+  color: #ffff;
+}
+
 .btn:hover {
   box-shadow: 1px 0px 15px rgba(184, 143, 47, 0.589);
 }
 .btn:active {
   transform: scale(1.1);
+}
+
+/* header section styles  */
+
+.navbar_inner_content {
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.24);
+}
+.logo {
+  cursor: pointer;
+}
+.logo img {
+  width: 100px;
+}
+
+.link {
+  display: none;
+}
+
+.link li a {
+  text-decoration: none;
+  color: var(--heading-color);
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+.link li a:hover {
+  color: var(--btn-bg-color);
+}
+.header_icons {
+  gap: 20px;
+}
+.header_icons img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.control_menu_icon i {
+  cursor: pointer;
+}
+
+.menu_toggle {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .logo img {
+    width: 100%;
+  }
+  .menu_toggle {
+    display: none;
+  }
+  .link {
+    display: flex;
+    gap: 50px;
+  }
+  .header_icons {
+    gap: 50px;
+  }
 }
 
 /* browse the range styles  */
@@ -93,7 +158,7 @@ small {
 }
 
 @media screen and (min-width: 1200px) {
-  body{
+  body {
     max-width: 1500px;
     margin: 0 auto;
   }
@@ -103,7 +168,7 @@ small {
 }
 
 /* here products styles   */
-.hero_products_inner_content {
+.product_container{
   padding: 60px 10px;
   text-align: center;
 }
@@ -124,7 +189,8 @@ small {
   visibility: visible;
   height: 100%;
 }
-.offer {
+.offer,
+.offer_respira {
   display: inline;
   position: absolute;
   top: 20px;
@@ -132,6 +198,12 @@ small {
   padding: 10px 5px;
   border-radius: 50%;
   background: tomato;
+}
+.offer_respira {
+  background: rgb(46, 193, 172);
+}
+.offer_respira small {
+  color: #fff;
 }
 .offer small {
   color: white;
@@ -205,7 +277,7 @@ small {
   }
 }
 @media screen and (min-width: 1200px) {
-  body{
+  body {
     max-width: 1500px;
     margin: 0 auto;
   }
@@ -350,7 +422,7 @@ small {
   }
 }
 @media screen and (min-width: 1200px) {
-  body{
+  body {
     max-width: 1500px;
     margin: 0 auto;
   }
@@ -365,44 +437,44 @@ small {
   }
 }
 
-
 /* funiro image gallery styles  */
-.img_gallery_container{}
-.img_gallery_inner_content{
+.img_gallery_container {
+}
+.img_gallery_inner_content {
   /* padding: 50px ; */
 }
 .title {
-text-align: center;
+  text-align: center;
 }
-.title h1{
+.title h1 {
   color: var(--heading-color);
 }
-.gallery_box{
+.gallery_box {
   gap: 5px;
 }
 
-.gallery_colum_1, .gallery_colum_3{
+.gallery_colum_1,
+.gallery_colum_3 {
   flex: 2;
 }
-.colum{
+.colum {
   width: 300px;
   gap: 5px;
 }
-.colum img{
+.colum img {
   max-width: 100%;
 }
 
-
 /* footer section styles  */
 
-.footer_container{
+.footer_container {
   border-top: 1px solid var(--text-color);
 }
 
-.footer_inner_content{
+.footer_inner_content {
   padding: 40px 10px 0 10px;
 }
-.footer_box{
+.footer_box {
   align-items: start;
   justify-content: center;
   gap: 50px;
@@ -410,34 +482,37 @@ text-align: center;
   border-bottom: 1px solid var(--text-color);
 }
 
-.colum{
+.colum {
   align-items: start;
   justify-content: start;
   gap: 20px;
 }
-.footer_links{
+.footer_links {
   justify-content: space-between;
 }
-.footer_link, .footer_help_links{
+.footer_link,
+.footer_help_links {
   flex-direction: column;
   align-items: start;
   gap: 30px;
 }
-.footer_link li a, .footer_help_links li a{
+.footer_link li a,
+.footer_help_links li a {
   color: rgba(0, 0, 0, 0.747);
-  transition: all .2s;
+  transition: all 0.2s;
   text-decoration: none;
 }
-.footer_link li a:hover, .footer_help_links li a:hover{
+.footer_link li a:hover,
+.footer_help_links li a:hover {
   color: var(--btn-bg-color);
 }
 
-.footer_title{
+.footer_title {
   color: var(--text-color);
   margin-bottom: 10px;
 }
 
-input[type="email"]{
+input[type="email"] {
   border: none;
   background: transparent;
   border-bottom: 1px solid var(--text-color);
@@ -445,47 +520,120 @@ input[type="email"]{
   font-size: 16px;
   color: var(--heading-color);
 }
-.subscribe_btn{
+.subscribe_btn {
   border: none;
   outline: nonen;
   background: transparent;
   border-bottom: 1px solid black;
-  transition: all .2s;
+  transition: all 0.2s;
   font-weight: 500;
   cursor: pointer;
 }
 
-.subscribe_btn:hover{
+.subscribe_btn:hover {
   color: tomato;
 }
 
-.footer_bottom{
+.footer_bottom {
   padding: 30px 0;
   text-align: center;
 }
 
-@media screen and (min-width:768px) {
-  .footer_inner_content{
+@media screen and (min-width: 768px) {
+  .footer_inner_content {
     padding: 50px 50px 0 50px;
   }
-  .footer_box{
+  .footer_box {
     justify-content: space-between;
     gap: 30px;
   }
-
 }
-@media screen and (min-width:1024px) {
-  .footer_inner_content{
+@media screen and (min-width: 1024px) {
+  .footer_inner_content {
     padding: 50px 70px 0 70px;
   }
 
-  .footer_title{
+  .footer_title {
     margin-bottom: 20px;
   }
-  .footer_bottom{
+  .footer_bottom {
     padding: 30px 0;
     text-align: left;
   }
-
-
 }
+
+/* shop page styles  */
+.shop_hero {
+  background: url(./Images/shop_page_img/shop_bg.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0px;
+  text-align: center;
+}
+.shop_hero span {
+  color: var(--text-color);
+}
+
+.shop_filter_section {
+  justify-content: space-around;
+  padding: 10px 0px;
+  background: rgb(245, 232, 196);
+}
+
+.filter_left_side img {
+  width: 20px;
+}
+
+.right p {
+  color: #000000ad;
+}
+
+.filter_right_side p {
+  color: #000000ad;
+}
+.filter_right_side span {
+  background: #fff;
+  color: var(--text-color);
+  padding: 5px 10px;
+}
+
+/* shop page prducts navigation styles  */
+.products_navigation{
+  padding-bottom: 50px;
+}
+
+.product_navigation_btn{
+  background: rgb(250, 243, 234);
+  color: #000
+}
+
+/* shope page delevery features */
+
+.features_content > div{
+  flex: auto;
+  justify-content: start;
+  gap: 5px;
+}
+.features_content{
+  padding: 30px;
+  background: rgb(250, 243, 234);
+}
+.single_feature h3{
+  color: var(--heading-color);
+}
+
+@media screen and (min-width: 768px) {
+  .shop_hero {
+    padding: 120px 0px;
+  }
+
+  .features_content > div{
+    flex: 1;
+    justify-content: center;
+    gap: 5px;
+  }
+ 
+}
+
+
