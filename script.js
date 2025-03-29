@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // shop page products navigation function call
   shopPageProductsNavigation();
   updateActiveButton();
+
 });
 
 // shop page product navigation functions
@@ -201,6 +202,8 @@ const products = [
   },
 ];
 
+
+
 // Load products dynamically
 function loadProducts() {
   const productContainer = document.getElementById("products");
@@ -259,3 +262,10 @@ function loadProducts() {
     productContainer.appendChild(productDiv);
   });
 }
+
+
+// Product details page related products 
+
+
+
+
