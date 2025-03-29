@@ -1,30 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   // header
-//   fetch("./header.html")
-//       .then(response => response.text())
-//       .then(data => {
-//         console.log("Header Loaded:", data);
-//           document.getElementById("header").innerHTML = data;
-//       })
-//       .catch(error => console.error("Header load failed:", error));
-
-//   // footer
-//   fetch("/footer.html")
-//       .then(response => response.text())
-//       .then(data => {
-//           document.getElementById("footer").innerHTML = data;
-//       })
-//       .catch(error => console.error("Footer load failed:", error));
-
-// // products
-//       fetch("./products.html")
-//       .then(response => response.text())
-//       .then(data => {
-//         document.getElementById("products").innerHTML = data;
-//       })
-//       .catch(error => console.error("Footer load failed:", error));
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
   // Load Header
   fetch("./header.html")
@@ -45,18 +18,46 @@ document.addEventListener("DOMContentLoaded", function () {
   // Load Products
   loadProducts();
 
-
-    // navigation btn 
-    const products_navigation = document.getElementById("products_navigation");
-    products_navigation.forEach(button => {
-      button.addEventListener("click", function(){
-        products_navigation.forEach(btn > btn.classList.remove("active"));
-        then.classList.add("active")
-      })
-    })
+  // shop page products navigation function call
+  shopPageProductsNavigation();
+  updateActiveButton();
 });
 
-// Sample product data
+// shop page product navigation functions
+const shopPageProductsNavigation = () => {
+  const products_navigation = document.querySelectorAll(
+    ".product_navigation_btn"
+  );
+  let currentIndex = 0;
+  // manually button click navigation
+  products_navigation.forEach((button, index) => {
+    button.addEventListener("click", function () {
+      if (button.innerText !== "Next") {
+        currentIndex = index;
+      }
+      updateActiveButton();
+    });
+  });
+
+  // next button click navigation
+  const nextbtn = document.getElementById("nextbtn");
+
+  nextbtn.addEventListener("click", function () {
+    if (currentIndex < products_navigation.length - 2) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    updateActiveButton();
+  });
+
+  const updateActiveButton = () => {
+    products_navigation.forEach((btn) => btn.classList.remove("active"));
+    products_navigation[currentIndex].classList.add("active");
+  };
+};
+
+// products data
 const products = [
   {
     id: 1,

@@ -472,7 +472,7 @@ small {
 }
 
 .footer_inner_content {
-  padding: 40px 10px 0 10px;
+  padding: 40px 10px 0 0px;
 }
 .footer_box {
   align-items: start;
