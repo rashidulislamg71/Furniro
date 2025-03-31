@@ -663,7 +663,7 @@ input[type="email"] {
   color: #000;
 }
 
-.product_details_contents{
+.product_details_contents {
   padding: 20px;
   align-items: start;
   gap: 30px;
@@ -750,12 +750,15 @@ input[type="email"] {
 }
 .blue {
   background: blue;
+  cursor: pointer;
 }
 .black {
   background: #000;
+  cursor: pointer;
 }
 .olive {
   background: rgb(224, 185, 78);
+  cursor: pointer;
 }
 
 .quantity_cart_compare_btn {
@@ -789,12 +792,10 @@ input[type="email"] {
 .compare button:hover {
   box-shadow: 0 1px 20px rgba(128, 128, 128, 0.349);
 }
-
 .horizontal_border {
   width: 100%;
   margin: 30px 0px;
 }
-
 .details {
   align-items: start;
   justify-content: start;
@@ -802,11 +803,9 @@ input[type="email"] {
 .details small {
   width: 60px;
 }
-
 .details .tages {
   width: 160px;
 }
-
 .details .share_icons {
   gap: 8px;
   width: 130px;
@@ -818,7 +817,6 @@ input[type="email"] {
 }
 
 /* description styles  */
-
 .inner_description {
   flex-direction: column;
   padding: 50px 15px;

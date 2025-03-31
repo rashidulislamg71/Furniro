@@ -6,9 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("header").innerHTML = data;
     })
     .catch((error) => console.error("Header load failed:", error));
-
   // Load Footer
-  fetch("./footer.html")
+  fetch("footer.html")
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("footer").innerHTML = data;
@@ -20,8 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // shop page products navigation function call
   shopPageProductsNavigation();
-  updateActiveButton();
-
 });
 
 // shop page product navigation functions
@@ -202,8 +199,6 @@ const products = [
   },
 ];
 
-
-
 // Load products dynamically
 function loadProducts() {
   const productContainer = document.getElementById("products");
@@ -263,9 +258,4 @@ function loadProducts() {
   });
 }
 
-
-// Product details page related products 
-
-
-
-
+// Product details page related products
