@@ -1,0 +1,148 @@
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+div.checkout_container{
+    padding: 50px 60px;
+    
+}
+div.checkout_inner_content{
+    justify-content: space-evenly;
+    align-items: start;
+
+}
+div.checkout_form{
+    
+}
+
+.checkout_container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #000000ce;
+}
+
+
+
+label{
+    display: inline-block;
+    font-size: 14px;
+    color: #000000c2;
+    padding-bottom: 5px;
+}
+
+div.name{
+    align-items: start;
+    justify-content: start;
+}
+input, #email, select{
+    padding: 5px 10px;
+ width: 200px;
+    color: #000000ad;
+    outline-color: green;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.815);
+}
+#email{
+    border: 1px solid gray;
+    width: 200px;
+}
+
+input#additional_info {
+    display: inline-block;
+    padding: 7px 11px;
+}
+select{
+    width: 200px;
+}
+
+.checkout_products_details{
+    max-width: 386px;
+}
+
+div.checkout_product_detailes_inner_content{
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+div.produt_and_subtotal{
+   justify-content: space-between;
+}
+
+div.checkout_product{
+    flex-direction: column;
+    align-items: start;
+}
+div.checkout_subtotal{
+    flex-direction: column;
+    align-items: end;
+}
+
+div.checkout_subtotal h4{
+    color: rgb(241, 152, 35);
+}
+
+.checkout_h_line{
+    margin: 30px 0px 10px 0px;
+    width: 100%;
+}
+
+div.bank_transfer{
+    max-width: 528px;
+    align-items: start;
+    justify-content: start;
+}
+
+.bank li{
+    list-style: disc ;
+}
+div.paymnet_adderss{
+    flex-direction: column;
+    align-items: start;
+    justify-content: stretch;
+}
+.select_to_payment{
+    list-style: disc;
+    list-style-type: circle;
+}
+
+.bank_transfer small{
+   
+}
+
+div.bank_transfer p{
+    font-size: 14px;
+}
+div.bank_transfer p span{
+    font-weight: bold;
+    cursor: pointer;
+
+}
+div.bank_transfer p span:hover{
+    color: rgba(0, 0, 255, 0.767);
+}
+.place_oder_btn {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.place_oder_btn button{
+    border: 1px solid gray;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+
+}
+
+.place_oder_btn button:hover{
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.418);
+}
+

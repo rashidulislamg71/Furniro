@@ -51,8 +51,9 @@ div.cart-header {
   justify-content: space-evenly;
   font-weight: bold;
   flex-wrap: nowrap;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #eee;
+  padding: 10px;
+  background-color: #fef5e6;
+  margin-bottom: 30px;
 }
 
 .cart-header span:nth-child(2) {
