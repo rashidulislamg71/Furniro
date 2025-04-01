@@ -13,8 +13,8 @@
   background: url(./Images/shop_page_img/shop_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  padding: 100px 0px;
+  background-position: left;
+  padding: 30px 0px;
   text-align: center;
   flex-direction: column;
   gap: 20px;
@@ -122,4 +122,15 @@ div.cart-header {
   cursor: pointer;
   font-size: 16px;
   margin-top: 30px;
+}
+
+@media screen and (min-width:768px) {
+  .cart_banner {
+    padding: 80px 0px;
+  }
+}
+@media screen and (min-width:1024px) {
+  .cart_banner {
+    padding: 100px 0px;
+  }
 }
